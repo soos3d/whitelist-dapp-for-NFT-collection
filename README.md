@@ -14,6 +14,12 @@ The front end uses `Netx.js` and `Tailwind CSS`.
 
 ## Table of contents
 
+  - [Prerequisites](#prerequisites)
+  - [Quickstart](#quickstart)
+    - [Deploy the smart contract](#deploy-the-smart-contract)
+    - [Run the front-end](#run-the-front-end)
+  - [Code explanation](#code-explanation)
+
 ## Prerequisites
 
 * Node.js, [install node js from here](https://nodejs.org/en/download/). 
