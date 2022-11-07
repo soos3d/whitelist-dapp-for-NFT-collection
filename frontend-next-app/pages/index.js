@@ -247,81 +247,82 @@ export default function Home() {
 
   return (
     <div className="bg-slate-600">
-      <Head>
+
+    <Head>
         <title>Amazing whitelist DApp</title>
         <meta name="description" content="Whitelist-Dapp" />
         <link rel="icon" href="/favicon.png" />
-      </Head>
-      <div className='container mx-auto px-10 mb-8'>
+    </Head>
+    <div className='container mx-auto px-10 mb-8'>
 
         <div className='bg-white shadow-lg rounded-lg p-8 mb-8 bg-opacity-50'>
-          <h3 className='text-3xl mb-8 text-center font-semibold  border-b border-amber-500 pb-4'>
-              Welcome to your new whitelist DApp!
-          </h3>
+            <h3 className='text-3xl mb-8 text-center font-semibold  border-b border-amber-500 pb-4'>
+                Welcome to your new whitelist DApp!
+            </h3>
 
-          <p className='text-lg text-amber-50'>
-          This DApp allows whitelisting a certain number of addresses that will have free access to the NFT min. The purpose it to teach you how you can develop a DApp like this.
-          </p>
-          <p className='text-lg text-amber-50 border-b border-amber-50'>
-            The development is divided in two stages: 
-          </p>
-          <li className="indent-4 mt-4 text-amber-50">The smart contract.</li>
-          <li className="indent-4 mb-4 text-amber-50">The front end.</li>
-          <p className='text-lg text-amber-50 mt-4'>
-          The smart contract is written in Solidity and deployed using Hardhat on the Goerli testnet. The frontend is made using Netx.js and Tailwind CSS.
-          </p>
+            <p className='text-lg text-amber-50'>
+                This DApp allows whitelisting a certain number of addresses that will have free access to the NFT min. The purpose it to teach you how you can develop a DApp like this.
+            </p>
+            <p className='text-lg text-amber-50 border-b border-amber-50'>
+                The development is divided in two stages:
+            </p>
+            <li className="indent-4 mt-4 text-amber-50">The smart contract.</li>
+            <li className="indent-4 mb-4 text-amber-50">The front end.</li>
+            <p className='text-lg text-amber-50 mt-4'>
+                The smart contract is written in Solidity and deployed using Hardhat on the Goerli testnet. The frontend is made using Netx.js and Tailwind CSS.
+            </p>
 
-          <div className="grid place-items-center">
-            <h2 className="mt-5 text-lg text-amber-50"> Find the complete repo on GitHub! </h2>
-          <a href="https://github.com/soos3d/whitelist-dapp-for-NFT-collection" target="blank">  
-          <span className='mt-5 transition duration-500 transform hover:-translate-y-2 inline-block bg-slate-900  font-medium rounded-full text-white px-8 py-3 cursor-pointer'>
-              GitHub repository
-          </span>
-          </a>
-          </div>
+            <div className="grid place-items-center">
+                <h2 className="mt-5 text-lg text-amber-50"> Find the complete repo on GitHub! </h2>
+                <a href="https://github.com/soos3d/whitelist-dapp-for-NFT-collection" target="blank">
+                    <span className='mt-5 transition duration-500 transform hover:-translate-y-2 inline-block bg-slate-900  font-medium rounded-full text-white px-8 py-3 cursor-pointer'>
+                        GitHub repository
+                    </span>
+                </a>
+            </div>
         </div>
 
     </div>
     <div className='container mx-auto px-10 mb-8'>
-    <div className="bg-white shadow-lg rounded-lg p-8 mb-8 mt-10 bg-opacity-50">
-        <div>
-            <div className="text-lg mb-10 grid place-items-center">
-                <h1 className="text-2xl mb-8 text-center font-semibold"> Whitelist tracker DApp for your NFT collection </h1>
-                <h2 className="text-xl mb-5 text-center font-semibold">SUMMARY</h2>
-              
-                <p className="text-xg font-semibold text-amber-50 border-b border-amber-500 mb-2 mt-2">Max {maxWhitelistedAddresses} addresses can be whitelisted.</p>
-                <p className="text-lg text-amber-50 border-b border-amber-500 mb-2 mt-2">{numberOfWhitelisted} have already joined the whitelist.</p>
-                <p className="text-lg text-amber-50 border-b border-amber-500 mb-2 mt-2">{whitelistSpotsLeft} spots are left on the whitelist.</p>
+        <div className="bg-white shadow-lg rounded-lg p-8 mb-8 mt-10 bg-opacity-50">
+            <div>
+                <div className="text-lg mb-10 grid place-items-center">
+                    <h1 className="text-2xl mb-8 text-center font-semibold"> Whitelist tracker DApp for your NFT collection </h1>
+                    <h2 className="text-xl mb-5 text-center font-semibold">SUMMARY</h2>
 
-                <span className="mt-5 transition duration-500 transform hover:-translate-y-2 inline-block bg-amber-500 text-slate-900 font-medium rounded-full text-white px-8 py-3 cursor-pointer">{renderButton()}</span>
+                    <p className="text-xg font-semibold text-amber-50 border-b border-amber-500 mb-2 mt-2">Max {maxWhitelistedAddresses} addresses can be whitelisted.</p>
+                    <p className="text-lg text-amber-50 border-b border-amber-500 mb-2 mt-2">{numberOfWhitelisted} have already joined the whitelist.</p>
+                    <p className="text-lg text-amber-50 border-b border-amber-500 mb-2 mt-2">{whitelistSpotsLeft} spots are left on the whitelist.</p>
+
+                    <span className="mt-5 transition duration-500 transform hover:-translate-y-2 inline-block bg-amber-500 text-slate-900 font-medium rounded-full text-white px-8 py-3 cursor-pointer">{renderButton()}</span>
+                </div>
+
             </div>
-            
+
         </div>
-
     </div>
-</div>
-<footer className={styles.footer}>
-<p className="mr-5">Made with &#10084; by me, find me on:</p>
+    <footer className={styles.footer}>
+        <p className="mr-5">Made with &#10084; by me, find me on:</p>
 
-    <div className="mb-5">
-    
-          <a href="https://twitter.com/web3Dav3" target="blank">  
-          <span className='transition duration-500 transform hover:-translate-y-2 inline-block bg-blue-500  font-medium rounded-full text-white px-8 py-3 cursor-pointer'>
-              Twitter
-          </span>
-          </a>
-          <a href="https://github.com/soos3d" target="blank">  
-            <span className='transition duration-500 transform hover:-translate-y-2 inline-block bg-black  font-medium rounded-full text-white px-8 py-3 cursor-pointer ml-4'>
-              GitHub
-            </span>
+        <div className="mb-5">
+
+            <a href="https://twitter.com/web3Dav3" target="blank">
+                <span className='transition duration-500 transform hover:-translate-y-2 inline-block bg-blue-500  font-medium rounded-full text-white px-8 py-3 cursor-pointer'>
+                    Twitter
+                </span>
             </a>
-            <a href="https://soosweb3.hashnode.dev/" target="blank">  
-            <span className='transition duration-500 transform hover:-translate-y-2 inline-block bg-blue-600  font-medium rounded-full text-white px-8 py-3 cursor-pointer ml-4'>
-              HashNode
-            </span>
+            <a href="https://github.com/soos3d" target="blank">
+                <span className='transition duration-500 transform hover:-translate-y-2 inline-block bg-black  font-medium rounded-full text-white px-8 py-3 cursor-pointer ml-4'>
+                    GitHub
+                </span>
             </a>
-          </div>
-</footer>
-    </div>
+            <a href="https://soosweb3.hashnode.dev/" target="blank">
+                <span className='transition duration-500 transform hover:-translate-y-2 inline-block bg-blue-600  font-medium rounded-full text-white px-8 py-3 cursor-pointer ml-4'>
+                    HashNode
+                </span>
+            </a>
+        </div>
+    </footer>
+  </div>
   );
 }
