@@ -1,0 +1,34 @@
+{
+  "name": "whitelist-dapp-nft-collection",
+  "version": "1.0.0",
+  "description": "This DApp allows whitelisting a certain number of addresses that will have free access to the NFT mint.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soos3d/whitelist-dapp-for-NFT-collection.git"
+  },
+  "keywords": [
+    "nft",
+    "whitelist",
+    "dapp",
+    "next",
+    "web3"
+  ],
+  "author": "Davide Zambiasi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soos3d/whitelist-dapp-for-NFT-collection/issues"
+  },
+  "homepage": "https://github.com/soos3d/whitelist-dapp-for-NFT-collection#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-etherscan": "^3.1.2",
+    "hardhat": "^2.12.2"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "dotenv": "^16.0.3"
+  }
+}
