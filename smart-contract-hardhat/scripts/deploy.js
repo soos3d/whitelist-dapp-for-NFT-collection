@@ -6,10 +6,9 @@ async function main() {
   so whitelistContract here is a factory for instances of our Whitelist contract.
   */
   const whitelistContract = await ethers.getContractFactory("Whitelist");
-  const constructor = 10
 
   // here we deploy the contract, the parameter in () is the contructor argument.
-  const deployedWhitelistContract = await whitelistContract.deploy(constructor);   // 10 is the Maximum number of whitelisted addresses allowed.
+  const deployedWhitelistContract = await whitelistContract.deploy(10);   // 10 is the Maximum number of whitelisted addresses allowed.
   console.log(`Deploying smart contract...`)                             // This is just so you know what is happening during the process
 
   // Wait for it to finish deploying.
