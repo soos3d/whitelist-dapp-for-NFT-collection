@@ -10,6 +10,10 @@ The smart contract is written in Solidity and deployed using Hardhat. You can fi
 
 The front end uses `Netx.js` and `Tailwind CSS`.
 
+This DApp is deployed on Vercel if you want to try it out!
+
+[Whitelist DApp link](https://whitelist-dapp-for-nft-collection.vercel.app/)
+
 > Note that this DApp is inspired by the whitelist DApp you create following the [Learn web3 DAO courses](https://learnweb3.io/brand/logo-white.png).
 
 ## Table of contents
